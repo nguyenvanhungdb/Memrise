@@ -1,0 +1,251 @@
+:root {
+  --primary-color: #f9bb02;
+  --black-color: #293749;
+  --white-color: #ffffff;
+  --box-shadow-color:#E3AA03;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+i {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+img,
+span,
+button,
+ion-icon {
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.center-x {
+  justify-content: center;
+}
+.center-y {
+  align-items: center;
+}
+button {
+  all: unset;
+}
+
+/* header */
+.header {
+  width: auto;
+  background-color: var(--primary-color);
+  height: 40px;
+  justify-content: end;
+}
+.header-language {
+  gap: 10px;
+}
+.header-wrap {
+  gap: 30px;
+  margin-right: 40px;
+}
+.btn-header-signin{
+  width: 110px;
+  height: 32px;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 500;
+  background-color: var(--white-color);
+  justify-content: center;
+  align-items: center;
+}
+.header-banner {
+  height: 80px;
+  width: 2000px;
+  background-color: var(--black-color);
+}
+
+.white-btn {
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: sans-serif;
+  /* background: none; */
+  
+}
+.logo-header {
+  width: 60px;
+  height: 56px;
+  margin-left: 10px;
+}
+.btn-learn {
+  background-color: var(--primary-color);
+  font-size: 18px;
+  padding: 10.5px 24px;
+  border-radius: 15px;
+  border-style: none;
+  font-family: sans-serif;
+}
+.header-banner {
+  justify-content: space-between;
+}
+.banner-header-list {
+  margin-right: 30px;
+}
+.gap-banner {
+  gap: 20px;
+}
+
+/* body */
+.body-introduce {
+  background-image: url(../images/home-background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 668px;
+}
+
+.block-introduce-wrap {
+  justify-content: space-between;
+  align-items: center;
+  width: 1100px;
+  height: 668px;
+
+}
+.body-introduce {
+  justify-content: center;
+}
+.wrap-introduce {
+  background-color: var(--white-color);
+  width: 670px;
+  height: 484px;
+  border-radius: 20px;
+  justify-content: center;
+}
+.img-flag {
+  width: 64px;
+  height: 64px;
+}
+.list-content-1 {
+  gap: 15px;
+  align-items: center;
+  justify-content: first;
+  margin-bottom: 20px;
+}
+.big-word {
+  font-size: 48px;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.normal-word {
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+.btn-begin-course {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.color-word-1 {
+  background-color: #00A778;
+  color: var(--white-color);
+  font-size: 20px;
+  font-family: sans-serif;
+  border-radius: 20px;
+  padding: 2px 12px;
+}
+.color-word-2 {
+  background-color: #1580AD;
+  color: var(--white-color);
+  font-size: 20px;
+  font-family: sans-serif;
+  border-radius: 20px;
+  padding: 2px 12px;
+}
+.btn-begin-course {
+  background-color: var(--primary-color);
+  width: 606px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-applestore {
+  width: 50px;
+  height: 50px;
+}
+.img-5-star {
+  width: 100px;
+  height: 20px;
+}
+.word-evaluate {
+  font-size: 14px;
+  font-style: inherit;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+.block-evaluate-1 {
+  gap: 10px;
+}
+.block-list-evaluate  {
+  gap: 30px;
+}
+.gap-star-evaluate {
+  gap: 10px;
+}
+.header-word {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: var(--white-color);
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.introduce-block-list {
+  justify-content: center;
+  align-items: center;
+}
+.block-evaluate-1 {
+  margin-bottom: 30px;
+}
+.wrap-content-block {
+  justify-content: center;
+  align-items: center;
+}
+.wrap-content-introduce {
+  justify-content: center;
+  align-content: center;
+  width: 606px;
+}

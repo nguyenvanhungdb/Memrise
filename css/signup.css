@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: white;
+  display: flex;              
+  flex-direction: column;
+  color: #000;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #1f2b3e;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+main {
+  flex: 1;
+}
+
+.logo {
+  color: #FFD400;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.sign-in-btn {
+  background-color: #ffcc00;
+  color: black;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-image {
+  width: 100%;
+  max-width: 450px;
+}
+
+.right {
+  flex: 1;
+  max-width: 500px;
+  /* margin-left: 40px; */
+  margin-right: 110px;
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2a2a2a;
+}
+
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.google-btn {
+  background-color: #4285f4;
+  color: white;
+}
+
+
+.google-btn small {
+  font-size: 12px;
+}
+
+.facebook-btn {
+  background-color: #506ccf;
+  color: white;
+}
+
+.apple-btn {
+  background-color: #000;
+  color: white;
+}
+
+.or {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 8px 0 4px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.note {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.note ul {
+  padding-left: 20px;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+  background-color: #263245;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-content a img {
+  width: 16px;
+  height: 16px;
+  filter: invert(100%);
+  vertical-align: middle;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
