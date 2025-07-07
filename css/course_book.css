@@ -54,7 +54,7 @@ nav.buttons a.login {
 nav.buttons a.start {
     background-color: #edc753;
     color: #1f2937;
-    font-weight: 750;
+    font-weight: 700;
     padding: 10.5px 24px;
     border-radius: 15px;
     transition: background-color 0.3s ease;
