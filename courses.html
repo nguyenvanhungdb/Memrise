@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Memrise Courses </title>
+  <link rel= "stylesheet" href= "css/courses.css" />
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/logo.jpg" alt="Logo">
+    <nav aria-label="Main navigation">
+      <a href="#" role="link" aria-current="false">Trang Chủ</a>
+      <a href="#" class="active" role="link" aria-current="page">Khóa Học</a>
+      <a href="#" role="link" aria-current="false">Nhóm</a>
+    </nav>
+    <button class="create-btn" aria-label="Tạo khóa học">Tạo khóa học</button>
+    <div class="search-container" role="search">
+      <input type="search" placeholder="Tìm kiếm..." aria-label="Tìm kiếm khóa học" />
+      <button aria-label="Tìm kiếm">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5" /><line x1="11" y1="11" x2="15" y2="15"/></svg>
+      </button>
+    </div>
+    <div class="profile-icon" aria-label="User profile menu" tabindex="0"></div>
+  </header>
+  <main>
+    <h1>Khóa học</h1>
+    <div class="content-wrapper">
+      <aside class="sidebar" aria-label="Sidebar with languages and course categories">
+        <section class="speak-wrapper" aria-labelledby="speak-label">
+          <label id="speak-label" for="language-select">Tôi nói:</label>
+          <select id="language-select" class="speak-select" aria-describedby="language-description" autocomplete="off">
+            <option value="vi" selected>Tiếng Việt</option>
+            <option value="en-uk">Tiếng Anh (Anh Quốc)</option>
+            <option value="ko">Tiếng Hàn</option>
+            <option value="zh-cn">Tiếng Hoa phổ thông (giản thể)</option>
+            <option value="ja">Tiếng Nhật</option>
+            <option value="en-us">Tiếng Anh (Hoa Kỳ)</option>
+            <option value="kanji">Tiếng Kanji</option>
+            <option value="zh-hk">Chỉ tiếng Hoa phổ thông</option>
+            <option value="de">Tiếng Đức</option>
+            <option value="number">Hệ thống số</option>
+          </select>
+        </section>
+        <section class="top-langs" aria-labelledby="top-langs-label">
+          <h2 id="top-langs-label">Top đầu</h2>
+          <ul>
+            <li tabindex="0" aria-current="false" role="listitem">
+              <img class="flag" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8b66f490-b97a-46fb-b154-98f8bc9701ae.png" alt="Quốc kỳ Anh Quốc" />
+              Tiếng Anh (Anh Quốc)
+            </li>
+            <li tabindex="0" aria-current="false" role="listitem">
+              <img class="flag" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d8b58702-475e-4857-af7f-7c1ede6cb957.png" alt="Quốc kỳ Hàn Quốc" />
+              Tiếng Hàn
+            </li>
+            <li tabindex="0" aria-current="false" role="listitem">
+              <img class="flag" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/832201c8-04bf-4f6c-9bfd-429fb8df5b0b.png" alt="Quốc kỳ Trung Quốc" />
+              Tiếng Hoa phổ thông (giản thể)
+            </li>
+            <li tabindex="0" aria-current="false" role="listitem">Tiếng Nhật</li>
+            <li tabindex="0" aria-current="false" role="listitem">
+              <img class="flag" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/51a46b09-87cc-4eb3-bcb7-5d2f8edadd60.png" alt="Quốc kỳ Hoa Kỳ" />
+              Tiếng Anh (Hoa Kỳ)
+            </li>
+            <li tabindex="0" aria-current="false" role="listitem">Tiếng Kanji</li>
+            <li tabindex="0" aria-current="false" role="listitem">Chỉ tiếng Hoa phổ thông</li>
+            <li tabindex="0" aria-current="false" role="listitem">Tiếng Đức</li>
+            <li tabindex="0" aria-current="false" role="listitem">
+              <svg class="system" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                fill="#e9e9e9" width="18" height="18" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="10" stroke="#ccc" stroke-width="2" fill="none"/>
+                <text x="12" y="16" font-size="12" fill="#ccc" text-anchor="middle" font-family="Arial, sans-serif">#</text>
+              </svg>
+              Hệ thống số
+            </li>
+          </ul>
+        </section>
+        <section class="categories-menu" aria-labelledby="categories-label">
+          <h2 id="categories-label">Môn học</h2>
+          <ul>
+            <li tabindex="0">Ngoại ngữ</li>
+            <li tabindex="0">Văn học & Nghệ thuật</li>
+            <li tabindex="0">Toán học & Khoa học</li>
+            <li tabindex="0">Thế giới Tự nhiên</li>
+            <li tabindex="0">Lịch sử & Địa lý</li>
+            <li tabindex="0">Luyện trí nhớ</li>
+            <li tabindex="0">Hướng nghiệp</li>
+            <li tabindex="0">Các bài trắc nghiệm tiêu chuẩn hóa</li>
+            <li tabindex="0">Khoa học thường thức</li>
+            <li tabindex="0">Giải trí</li>
+          </ul>
+        </section>
+      </aside>
+      <section class="courses" aria-label="Danh sách các khóa học hàng đầu">
+        <!-- Course cards -->
+        <article class="course-card" tabindex="0" aria-label="Khóa học 400 Words of TOEFL - Intermediate, 2.1 triệu lượt học, 7 giờ">
+          <div class="course-image">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4dbfaca0-2117-428c-ad1a-cdc28699c39d.png" 
+                 alt="Young woman reading book in a sunlit green park with friends in background" 
+                 onerror="this.style.backgroundColor='#777'; this.alt='Image failed to load: Young woman reading book in a sunlit green park with friends in background'"/>
+          </div>
+          <div class="course-content">
+            <div class="course-lang">
+              <img class="flag" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7e70a648-a956-4eb4-bf2e-77b11bef4519.png" alt="Quốc kỳ Anh Quốc" />
+              Tiếng Anh
+              <span class="course-level" aria-hidden="true">bởi Decks</span>
+            </div>
+            <div class="course-title">400 Words of TOEFL - Intermediate</div>
+            <div class="course-stats" aria-label="Lượt học và thời gian hoàn thành khóa học">
+              <div aria-label="2.1 triệu lượt học">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12c2 0 3.999-1.5 4-4s-2-4-4-4-4 1.5-4 4 2 4 4 4zm0 2c-3 0-8 1.5-8 4.5v2.5h16v-2.5c0-3-5-4.5-8-4.5z"/></svg>
+                2.1m
+              </div>
+              <div aria-label="7 giờ để hoàn thành">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path fill="currentColor" d="M12 6v6l5 3"/></svg>
+                7h
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-card" tabindex="0" aria-label="Khóa học SAT Comprehensive, 390 ngàn lượt học, 78 giờ">
+          <div class="course-image">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/78fc9dc2-e157-44aa-af96-2eaccbf97b77.png" 
+                 alt="Group of graduates in dark blue caps and gowns tossing hats in the air" 
+                 onerror="this.style.backgroundColor='#777'; this.alt='Image failed to load: Group of graduates in dark blue caps and gowns tossing hats in the air'"/>
+          </div>
+          <div class="course-content">
+            <div class="course-lang">
+              <img class="flag" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a7871762-724c-4236-82e9-1266d9fd8424.png" alt="Quốc kỳ Anh Quốc" />
+              Tiếng Anh
+              <span class="course-level" aria-hidden="true">bởi deactiv...</span>
+            </div>
+            <div class="course-title">SAT Comprehensive</div>
+            <div class="course-stats" aria-label="Lượt học và thời gian hoàn thành khóa học">
+              <div aria-label="390 ngàn lượt học">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12c2 0 3.999-1.5 4-4s-2-4-4-4-4 1.5-4 4 2 4 4 4zm0 2c-3 0-8 1.5-8 4.5v2.5h16v-2.5c0-3-5-4.5-8-4.5z"/></svg>
+                390k
+              </div>
+              <div aria-label="78 giờ để hoàn thành">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path fill="currentColor" d="M12 6v6l5 3"/></svg>
+                78h
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-card" tabindex="0" aria-label="Khóa học Capital Cities, 181 ngàn lượt học, 3 giờ">
+          <div class="course-image">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6ef08204-a7be-4cd9-a335-82ee9b3463fd.png" 
+                 alt="3D map location pin glowing yellow on blurred city streets background" 
+                 onerror="this.style.backgroundColor='#777'; this.alt='Image failed to load: 3D map location pin glowing yellow on blurred city streets background'"/>
+            <span title="Capital Cities course" aria-hidden="true" 
+                  style="position:absolute;left:8px;top:8px;background:#2f2f2f5f;border-radius:4px;padding:2px 6px;color:#ddd; font-size:10px;">
+                Capitals
+            </span>
+          </div>
+          <div class="course-content">
+            <div class="course-lang">
+              <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="#ccc" style="margin-right: 6px;">
+                <circle cx="12" cy="12" r="10" stroke="#fff3" stroke-width="2" fill="none" />
+                <path d="M12 8v8m-4-4h8" stroke="#f5bf23" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              Capital Cities
+              <span class="course-level" aria-hidden="true">bởi Abdullah...</span>
+            </div>
+            <div class="course-title">Capital Cities</div>
+            <div class="course-stats" aria-label="Lượt học và thời gian hoàn thành khóa học">
+              <div aria-label="181 ngàn lượt học">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12c2 0 3.999-1.5 4-4s-2-4-4-4-4 1.5-4 4 2 4 4 4zm0 2c-3 0-8 1.5-8 4.5v2.5h16v-2.5c0-3-5-4.5-8-4.5z"/></svg>
+                181k
+              </div>
+              <div aria-label="3 giờ để hoàn thành">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path fill="currentColor" d="M12 6v6l5 3"/></svg>
+                3h
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Additional courses omitted for brevity -->
+
+        <button class="load-more-btn" aria-label="Tải thêm khóa học">↻ Tải thêm...</button>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container" role="contentinfo" aria-label="Footer navigation and social media links">
+      <div>
+        <div class="logo-footer" aria-label="Memrise Logo Footer">MEM RISE</div>
+        <div class="social-icons" aria-label="Social media links">
+          <a href="#" aria-label="Facebook" tabindex="0" role="link" >
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b0fb1b70-ae35-4844-b563-5f199c6d669c.png" alt="Facebook icon" onerror="this.style.backgroundColor='#444'; this.alt='Facebook icon not loaded'"/>
+          </a>
+          <a href="#" aria-label="Twitter" tabindex="0" role="link">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/937c97d2-772f-4371-b887-09031a676275.png" alt="Twitter icon" onerror="this.style.backgroundColor='#444'; this.alt='Twitter icon not loaded'"/>
+          </a>
+          <a href="#" aria-label="YouTube" tabindex="0" role="link">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ac68cdcd-d5b9-45dc-b1f7-a431e5c15c7d.png" alt="YouTube icon" onerror="this.style.backgroundColor='#444'; this.alt='YouTube icon not loaded'"/>
+          </a>
+          <a href="#" aria-label="Instagram" tabindex="0" role="link">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9ff867d7-40d1-40c6-b166-23d24dab52c6.png" alt="Instagram icon" onerror="this.style.backgroundColor='#444'; this.alt='Instagram icon not loaded'"/>
+          </a>
+        </div>
+      </div>
+      <nav class="links" aria-label="Footer site links">
+        <ul>
+          <li class="title" aria-hidden="true">Giới thiệu</li>
+          <li><a href="#" tabindex="0">Đội ngũ</a></li>
+          <li><a href="#" tabindex="0">Cơ hội việc làm</a></li>
+        </ul>
+        <ul>
+          <li class="title" aria-hidden="true">Blog</li>
+          <li><a href="#" tabindex="0">Blog kỹ thuật lập trình</a></li>
+          <li><a href="#" tabindex="0">Thông cáo báo chí</a></li>
+        </ul>
+        <ul>
+          <li class="title" aria-hidden="true">Liên hệ</li>
+          <li><a href="#" tabindex="0">Câu hỏi thường gặp & Trợ giúp</a></li>
+        </ul>
+        <ul>
+          <li class="title" aria-hidden="true">Phrasebooks</li>
+        </ul>
+      </nav>
+      <nav class="links" aria-label="Legal links" style="width: 100%; margin-top: 14px; border-top: 1px solid #3b4252; padding-top: 12px; color:#555a6a; font-size: 11px; text-align: center;">
+        <ul style="display: flex; justify-content: center; gap: 24px;">
+          <li><a href="#" tabindex="0">Điều Khoản Sử Dụng</a></li>
+          <li><a href="#" tabindex="0">Chính Sách Bảo Mật</a></li>
+          <li><a href="#" tabindex="0">Chính sách Cookie</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
+
+
